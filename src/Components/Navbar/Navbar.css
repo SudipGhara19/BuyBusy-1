@@ -1,7 +1,8 @@
 /* Navbar.css */
 .navbar-container {
-    background-color: #333;
-    padding: 10px;
+    background-color: #7a00b3;
+    /* padding: 10px; */
+    height: 80px;
   }
   
   .navbar {
@@ -25,10 +26,11 @@
   }
   
   .nav-links {
+    margin-top: 15px;
     display: flex;    
   }
   .signoutbtn{
-    background-color: #333;
+    background-color: #7a00b3;
   }
   
   .nav-link {
@@ -38,17 +40,18 @@
     font-size: 18px;
     align-items: center;
     padding: 10px;
-    margin-left: 15px;
+    margin-left: 40px;
   }
   
   .nav-icon {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     margin-right: 10px;
+    filter: invert(100%);
   }
   
   .nav-link:hover {
-    background-color: #555;
+    background-color: #450065;
     border-radius: 5px;
   }
   

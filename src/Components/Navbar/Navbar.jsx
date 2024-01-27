@@ -36,7 +36,7 @@ function Navbar() {
         <div className="navbar">
           <div className="app-name">
             {/* Application title */}
-            <img alt="BusyBuy" src={Logo} style={{height:50, width:200}}/>
+            <img alt="BusyBuy" src={Logo} style={{height:60, width:220, marginTop:8, marginLeft:10}}/>
           </div>
           <div className="nav-links">
             {currentUser ? (
@@ -45,17 +45,18 @@ function Navbar() {
                 <NavLink to={"/"} className="nav-link">
                   {/* Home link */}
                   <img
-                    src="https://cdn-icons-png.flaticon.com/128/5974/5974636.png"
+                    src="https://t3.ftcdn.net/jpg/06/37/06/82/360_F_637068250_GiSz2fq4mVi5d19fiiuJgdPflgHeZsgM.webp"
                     alt="Home Icon"
                     className="nav-icon"
+                    style={{color: "#fff"}}
                   />
                   Home
                 </NavLink>
                 <NavLink to={`/users/${currentUser.uid}/orders`} className="nav-link">
                   {/* Orders link */}
                   <img
-                    src="https://cdn-icons-png.flaticon.com/128/6815/6815043.png"
-                    alt="Orders Icon"
+                  alt="order-icon"
+                    src="https://icons.veryicon.com/png/o/miscellaneous/icondian/icon-order-1.png"
                     className="nav-icon"
                   />
                   Orders
@@ -63,7 +64,7 @@ function Navbar() {
                 <NavLink to={`/users/${currentUser.uid}/myCart`} className="nav-link">
                   {/* Cart link */}
                   <img
-                    src="https://cdn-icons-png.flaticon.com/128/6815/6815043.png"
+                    src="https://icons.veryicon.com/png/256/object/material-design-icons-1/cart-22.png"
                     alt="Cart Icon"
                     className="nav-icon"
                   />
@@ -72,7 +73,7 @@ function Navbar() {
                 <button className="nav-link signoutbtn" onClick={handleSignOut}>
                   {/* Logout button */}
                   <img
-                    src="https://cdn-icons-png.flaticon.com/128/4400/4400828.png"
+                    src="https://icons.veryicon.com/png/256/internet--web/website-common-icons/user-user-1.png"
                     alt="Logout Icon"
                     className="nav-icon"
                   />
@@ -85,7 +86,7 @@ function Navbar() {
                 <NavLink to={"/"} className="nav-link">
                   {/* Home link */}
                   <img
-                    src="https://cdn-icons-png.flaticon.com/128/5974/5974636.png"
+                    src="https://t3.ftcdn.net/jpg/06/37/06/82/360_F_637068250_GiSz2fq4mVi5d19fiiuJgdPflgHeZsgM.webp"
                     alt="Home Icon"
                     className="nav-icon"
                   />
@@ -94,7 +95,7 @@ function Navbar() {
                 <NavLink to={"/signin"} className="nav-link">
                   {/* Sign In link */}
                   <img
-                    src="https://cdn-icons-png.flaticon.com/128/1646/1646779.png"
+                    src="https://icons.veryicon.com/png/256/miscellaneous/operation-bar-icon/sign-in-115.png"
                     alt="Sign In Icon"
                     className="nav-icon"
                   />
