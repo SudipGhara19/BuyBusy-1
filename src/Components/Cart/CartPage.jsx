@@ -1,12 +1,20 @@
 // Importing necessary dependencies and styles
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useCart } from '../../Contexts/CartContext';
 import './CartPage.css';
+import { HashLoader } from 'react-spinners';
 
 // CartPage component to display and manage the shopping cart
 export default function CartPage() {
   // Accessing cart-related functions and data from the shopping cart context
   const { cart, fetchCart, removeFromCart, updateQuantity, handlePurchase } = useCart();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(()=>{
+      setLoading(false);
+    },2000)
+  },[]);
 
   // Fetching the cart data when the component mounts
   useEffect(() => {
@@ -23,6 +31,8 @@ export default function CartPage() {
 
   // Rendering the CartPage component
   return (
+  <>
+  {loading ? (<HashLoader speedMultiplier="2" size="100" color="#b800ff" style={{alignSelf: "center"}}/>) : (
     <div className="main">
       <h2 className="cartH2">Cart</h2>
       <div className="cart-page">
@@ -81,5 +91,7 @@ export default function CartPage() {
         )}
       </div>
     </div>
+    )}
+    </>
   );
 }

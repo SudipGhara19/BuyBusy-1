@@ -1,12 +1,14 @@
 // Importing necessary dependencies and styles
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProductCard from "./ProductsCard";
 import { ProductData } from "../../data.js";
 import "./Products.css";
+import { HashLoader } from "react-spinners";
 
 // Products component to display and filter product data
 export default function Products() {
   // Extracting unique categories from the product data
+
   const uniqueCategories = [
     ...new Set(ProductData.map((product) => product.category)),
   ];
@@ -14,6 +16,14 @@ export default function Products() {
   // States to keep track of selected categories and search input
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [searchInput, setSearchInput] = useState("");
+  //set Loading
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(()=>{
+      setLoading(false);
+    },2000)
+  },[]);
 
   // Function to handle checkbox change for category filtering
   const handleCheckboxChange = (category) => {
@@ -43,6 +53,7 @@ export default function Products() {
           onChange={handleSearchInputChange}
         />
       </div>
+      {loading ? (<HashLoader speedMultiplier="2" size="100" color="#b800ff" style={{alignSelf: "center"}}/>) : (
       <div className="products-container">
         <div className="filter-section">
           <h3>Filter </h3>
@@ -73,7 +84,7 @@ export default function Products() {
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
-      </div>
+      </div>)};
     </>
   );
 }

@@ -22,7 +22,7 @@ export const ProductData = [
   {id:21, name: "Soccer Ball", category: "Sports", price: 15, image: "https://m.media-amazon.com/images/I/51prz-n0MmL._AC_UF894,1000_QL80_.jpg" },
   {id:22, name: "Biography Book", category: "Books", price: 50, image: "https://rolibooks.com/wp-content/uploads/2022/10/9789351941903-scaled-1-1.jpg" },
   {id:23, name: "Weight Bench", category: "Fitness", price: 80, image: "https://m.media-amazon.com/images/I/41PLhYid1sL._AC_UF1000,1000_QL80_.jpg" },
-  {id:24, name: "Tablet", category: "Electronics", price: 180, image: "https://m.media-amazon.com/images/I/41PLhYid1sL._AC_UF1000,1000_QL80_.jpg" },
+  {id:24, name: "Tablet", category: "Electronics", price: 180, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NanXM51g6JH7zGXl2_x-Xl6i1cPDX3bq_k9ndT0MMWtjCh6743m77CZDj5ri3a_a-eA&usqp=CAU" },
   {id:25, name: "Gaming Mouse", category: "Electronics", price: 40, image: "https://www.thevaluestore.in/image/cache/catalog/2020/Logitech/logitech-g502-hero-gaming-mouse-1-1000x1000.jpg" },
 
 ];
