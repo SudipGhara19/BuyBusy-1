@@ -3,6 +3,7 @@
     background-color: #7a00b3;
     /* padding: 10px; */
     height: 80px;
+   
   }
   
   .navbar {
@@ -53,5 +54,6 @@
   .nav-link:hover {
     background-color: #450065;
     border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
   }
   

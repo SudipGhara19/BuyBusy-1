@@ -26,7 +26,7 @@ export default function ProductCard({ product }) {
         <h3 className="product-name">{product.name}</h3>
         <p className="product-description">{product.description}</p>
         <span className="product-price">${product.price}</span>
-        <button onClick={handleAddToCart}>Add to Cart</button>
+        <button className="addToCart-btn" onClick={handleAddToCart}>Add to Cart</button>
       </div>
     </div>
   );

@@ -42,7 +42,7 @@ export default function App() {
 
   // Wrapping the app with authentication and cart providers
   return (
-    <>
+    <div style={{fontFamily: "sans-serif"}}>
       {/* Authenticate users */}
       <AuthProvider>
         {/* Manage shopping cart state */}
@@ -53,6 +53,6 @@ export default function App() {
           <ToastContainer /> 
         </CartProvider>
       </AuthProvider>
-    </>
+    </div>
   );
 }
